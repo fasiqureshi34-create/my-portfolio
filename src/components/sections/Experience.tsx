@@ -7,7 +7,7 @@ export default function Experience() {
     <section id="experience" className="border-t border-white/[0.06] py-24">
       <div className="container-width">
         <SectionHeading
-          eyebrow="04 — Experience"
+          eyebrow="04 // Experience"
           title="Professional Journey."
           description="A chronological timeline of my professional career, technical responsibilities, and impactful contributions."
         />
@@ -37,7 +37,7 @@ export default function Experience() {
                       <Calendar size={14} className="text-violet-400" />
                       {item.period}
                     </span>
-                    <span className="text-white/20">•</span>
+                    <span className="text-white/20">/</span>
                     <span className="inline-flex items-center gap-1 text-zinc-400">
                       <MapPin size={13} className="text-zinc-500" />
                       {item.location}

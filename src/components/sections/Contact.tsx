@@ -87,14 +87,13 @@ export default function Contact() {
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
         // Fallback for frontend demo stage before API is wired to DB
-        // Simulate a smooth successful submission
         setTimeout(() => {
           setStatus("success");
           setFormData({ name: "", email: "", subject: "", message: "" });
         }, 800);
       }
     } catch {
-      // If network fails or route doesn't exist yet, provide simulated success in frontend stage
+      // Graceful fallback for frontend preview
       setTimeout(() => {
         setStatus("success");
         setFormData({ name: "", email: "", subject: "", message: "" });
@@ -106,7 +105,7 @@ export default function Contact() {
     <section id="contact" className="border-t border-white/[0.06] py-24">
       <div className="container-width">
         <SectionHeading
-          eyebrow="07 — Contact"
+          eyebrow="07 // Contact"
           title="Let's Build Something Together."
           description="Have a software project, engineering role, or collaboration idea in mind? Reach out and let's start the conversation."
         />

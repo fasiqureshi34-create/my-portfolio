@@ -20,7 +20,7 @@ export default function Resume() {
             {/* Top Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-violet-300">
               <Sparkles size={13} className="text-violet-400" />
-              06 — Verified Credentials
+              06 // Verified Credentials
             </div>
 
             <div className="mx-auto mt-6 mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-violet-500/15 text-violet-300 shadow-[0_0_25px_rgba(167,139,250,0.3)]">
@@ -71,7 +71,7 @@ export default function Resume() {
             </div>
 
             <p className="mt-6 text-xs text-zinc-500">
-              Format: PDF • Updated for 2026 • Suitable for engineering and technical leadership roles
+              Format: PDF | Updated for 2026 | Suitable for engineering and technical leadership roles
             </p>
           </div>
         </div>

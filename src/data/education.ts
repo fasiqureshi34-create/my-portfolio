@@ -17,7 +17,7 @@ export const educationList: EducationItem[] = [
     field: "Computer Science (BSCS)",
     institution: "National University of Sciences & Technology",
     location: "Islamabad, PK",
-    period: "2019 — 2023",
+    period: "2019 - 2023",
     grade: "CGPA: 3.8 / 4.0",
     description:
       "Comprehensive curriculum focusing on software engineering principles, algorithms, distributed systems, and modern database management.",
@@ -33,7 +33,7 @@ export const educationList: EducationItem[] = [
     field: "Pre-Engineering / Computer Science",
     institution: "Punjab College of Information Technology",
     location: "Punjab, PK",
-    period: "2017 — 2019",
+    period: "2017 - 2019",
     grade: "Grade: A+ (88%)",
     description:
       "Strong foundation in advanced mathematics, analytical reasoning, physics, and computer science fundamentals.",

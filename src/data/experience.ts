@@ -18,7 +18,7 @@ export const experiences: ExperienceItem[] = [
     company: "TechNova Solutions",
     location: "Remote / Hybrid",
     type: "Full-Time",
-    period: "2024 — Present",
+    period: "2024 - Present",
     current: true,
     description:
       "Leading full-stack architecture and feature development for high-traffic SaaS web applications, ensuring scalable backend microservices and snappy frontend performance.",
@@ -35,7 +35,7 @@ export const experiences: ExperienceItem[] = [
     company: "Apex Digital Labs",
     location: "On-Site",
     type: "Full-Time",
-    period: "2023 — 2024",
+    period: "2023 - 2024",
     current: false,
     description:
       "Developed robust customer-facing web platforms, RESTful APIs, and administrative dashboards with real-time data sync.",
@@ -52,7 +52,7 @@ export const experiences: ExperienceItem[] = [
     company: "CodeCraft Studios",
     location: "Hybrid",
     type: "Full-Time",
-    period: "2022 — 2023",
+    period: "2022 - 2023",
     current: false,
     description:
       "Crafted responsive and interactive user interfaces for modern web applications, focusing on clean code, accessibility, and pixel-perfect design fidelity.",

@@ -72,7 +72,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col items-center justify-between gap-4 pt-8 text-xs text-zinc-500 sm:flex-row">
           <p>
-            © {new Date().getFullYear()} Full-Stack Portfolio. Crafted with Next.js 15, TypeScript & Tailwind CSS.
+            &copy; {new Date().getFullYear()} Full-Stack Portfolio. Crafted with Next.js 15, TypeScript & Tailwind CSS.
           </p>
 
           <a

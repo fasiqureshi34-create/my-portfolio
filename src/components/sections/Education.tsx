@@ -7,7 +7,7 @@ export default function Education() {
     <section id="education" className="border-t border-white/[0.06] py-24">
       <div className="container-width">
         <SectionHeading
-          eyebrow="05 — Education"
+          eyebrow="05 // Education"
           title="Academic Qualifications."
           description="Formal education, academic foundations, computer science background, and specialized coursework."
         />
@@ -39,7 +39,7 @@ export default function Education() {
                     <Calendar size={13} className="text-violet-400" />
                     {item.period}
                   </span>
-                  <span className="text-white/20">•</span>
+                  <span className="text-white/20">/</span>
                   <span className="inline-flex items-center gap-1 text-zinc-400">
                     <MapPin size={12} className="text-zinc-500" />
                     {item.location}
