@@ -1,0 +1,13 @@
+import bcrypt from "bcryptjs";
+export * from "./token";
+
+export async function hashPassword(password: string): Promise<string> {
+  return bcrypt.hash(password, 12);
+}
+
+export async function comparePassword(
+  password: string,
+  hashed: string
+): Promise<boolean> {
+  return bcrypt.compare(password, hashed);
+}

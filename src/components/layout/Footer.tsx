@@ -1,4 +1,5 @@
-import { ArrowUp } from "lucide-react";
+import Link from "next/link";
+import { ArrowUp, Lock } from "lucide-react";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/BrandIcons";
 
 const navLinks = [
@@ -72,16 +73,27 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col items-center justify-between gap-4 pt-8 text-xs text-zinc-500 sm:flex-row">
           <p>
-            &copy; {new Date().getFullYear()} Full-Stack Portfolio. Crafted with Next.js 15, TypeScript & Tailwind CSS.
+            &copy; {new Date().getFullYear()} Full-Stack Portfolio. Built with Next.js 15, Neon PostgreSQL & Prisma.
           </p>
 
-          <a
-            href="#home"
-            className="inline-flex items-center gap-1.5 text-zinc-400 hover:text-violet-300 transition"
-          >
-            Back to top
-            <ArrowUp size={14} />
-          </a>
+          <div className="flex items-center gap-6">
+            <Link
+              href="/admin/dashboard"
+              className="inline-flex items-center gap-1.5 text-zinc-500 hover:text-violet-300 transition"
+              title="Admin Portal"
+            >
+              <Lock size={12} />
+              <span>Admin Portal</span>
+            </Link>
+
+            <a
+              href="#home"
+              className="inline-flex items-center gap-1.5 text-zinc-400 hover:text-violet-300 transition"
+            >
+              Back to top
+              <ArrowUp size={14} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

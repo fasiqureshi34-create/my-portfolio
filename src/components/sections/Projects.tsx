@@ -1,51 +1,72 @@
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { GithubIcon } from "@/components/ui/BrandIcons";
 import SectionHeading from "@/components/ui/SectionHeading";
+import { prisma } from "@/lib/prisma";
 
-const projects = [
+const fallbackProjects = [
   {
     number: "01",
-    title: "SaaS Analytics Dashboard",
+    title: "VICE DINE POS",
     description:
-      "An analytics dashboard concept for presenting business metrics, reports and data insights in a clean interface.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+      "High-performance cloud-connected Point of Sale & restaurant operating system with order dispatch, live kitchen telemetry, and split table billing.",
+    stack: ["Next.js 15", "TypeScript", "PostgreSQL", "Tailwind CSS", "Prisma"],
     github: "https://github.com/",
     demo: "https://example.com",
   },
   {
     number: "02",
-    title: "E-Commerce Platform",
+    title: "EnergyMitr",
     description:
-      "An online shopping application concept with product discovery, category browsing and a streamlined shopping experience.",
-    stack: ["React", "Node.js", "PostgreSQL"],
+      "Intelligent energy analytics and IoT telemetry platform monitoring industrial power consumption, solar yield, and peak-demand forecasting.",
+    stack: ["React", "Node.js", "PostgreSQL", "Time-Series Data", "IoT"],
     github: "https://github.com/",
     demo: "https://example.com",
   },
   {
     number: "03",
-    title: "Task Management App",
+    title: "VoltSend",
     description:
-      "A productivity application concept for organizing tasks, managing projects and tracking progress.",
-    stack: ["Next.js", "TypeScript", "REST API"],
+      "Ultra-fast developer webhook and transactional event delivery pipeline with automatic exponential retry policies, HMAC verification, and delivery analytics.",
+    stack: ["TypeScript", "REST APIs", "Redis Queue", "Docker", "PostgreSQL"],
     github: "https://github.com/",
     demo: "https://example.com",
   },
 ];
 
-export default function Projects() {
+export default async function Projects() {
+  let projectList = fallbackProjects;
+
+  try {
+    const dbProjects = await prisma.project.findMany({
+      orderBy: { number: "asc" },
+    });
+    if (dbProjects && dbProjects.length > 0) {
+      projectList = dbProjects.map((p) => ({
+        number: p.number,
+        title: p.title,
+        description: p.description,
+        stack: p.stack,
+        github: p.githubUrl || "https://github.com/",
+        demo: p.liveUrl || "https://example.com",
+      }));
+    }
+  } catch (error) {
+    console.error("Failed to load projects from Neon DB:", error);
+  }
+
   return (
     <section id="projects" className="border-t border-white/[0.06] py-24">
       <div className="container-width">
         <SectionHeading
           eyebrow="03 — Selected Work"
           title="Projects I've built."
-          description="A selection of projects showcasing my technical skills and approach to solving problems."
+          description="Production systems, scalable architectures, and developer platforms built with modern technology."
         />
 
         <div className="grid gap-5 lg:grid-cols-2">
-          {projects.map((project) => (
+          {projectList.map((project) => (
             <article
-              key={project.number}
+              key={project.number + project.title}
               className="glass-card group rounded-2xl p-7 transition duration-300 hover:-translate-y-1 hover:border-violet-400/30"
             >
               <div className="mb-10 flex items-center justify-between">
