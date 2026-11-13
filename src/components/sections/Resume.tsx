@@ -5,7 +5,7 @@ export default function Resume() {
     "Flutter & React Native cross-platform mobile development",
     "Offline-first systems with local SQLite & Cloud Firestore sync",
     "High-performance Python FastAPI, Node.js & PostgreSQL APIs",
-    "Auditorium event operations management (500+ attendees)"
+    "Demonstrated university conference operations (500+ attendees)"
   ];
 
   return (
@@ -27,12 +27,12 @@ export default function Resume() {
               <FileText size={32} />
             </div>
 
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
-              Curriculum Vitae &amp; Resume
+            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+              CV
             </h2>
 
             <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-zinc-300">
-              Review my full technical stack proficiencies, project accomplishments, leadership roles, and academic qualifications at University of Kotli, AJK.
+              Review my verified work history, technical stack proficiencies, flagship software projects, leadership experience, and academic qualifications.
             </p>
 
             {/* Highlights Grid */}
@@ -51,22 +51,22 @@ export default function Resume() {
             {/* Action Buttons */}
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <a
-                href="/resume.pdf"
-                download="Fasi_Ur_Rehman_CV.pdf"
+                href="/CV.pdf"
+                download="CV.pdf"
                 className="inline-flex items-center gap-2.5 rounded-full bg-violet-600 px-8 py-4 font-semibold text-white shadow-lg shadow-violet-600/25 transition duration-200 hover:bg-violet-500 hover:scale-[1.02] active:scale-[0.98]"
               >
                 <Download size={18} />
-                Download CV (PDF)
+                Download CV
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/CV.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-white/15 px-8 py-4 font-semibold text-zinc-300 transition duration-200 hover:border-violet-400/50 hover:bg-white/[0.04] hover:text-white"
               >
                 <ExternalLink size={17} />
-                Preview in Tab
+                Preview CV in Tab
               </a>
             </div>
           </div>

@@ -6,82 +6,225 @@ endobj
 << /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
-endobj
-5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
-endobj
-6 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 1200 >>
+<< /Length 4555 >>
 stream
 BT
-/F1 22 Tf
-50 740 Td
-(FULL-STACK SOFTWARE ENGINEER) Tj
+/F1 20 Tf
+50 780 Td
+(FASI UR REHMAN) Tj
+ET
+BT
 /F2 10 Tf
-0 -18 Td
-(Email: contact.developer@example.com | Portfolio: localhost:3000 | Location: Remote / Hybrid) Tj
-0 -25 Td
-/F1 14 Tf
+50 762 Td
+(BS Software Engineering Student | Full-Stack Web & Mobile Software Engineer) Tj
+ET
+BT
+/F1 9 Tf
+50 746 Td
+(Phone: 03055219276  |  Email: fasiqureshi34@gmail.com  |  Location: Kotli, AJK, Pakistan  |  LinkedIn: linkedin.com/in/fasi-qureshi-1b5764353) Tj
+ET
+0.5 w
+0.7 0.7 0.7 RG
+50 735 m 560 735 l S
+BT
+/F2 11 Tf
+0.15 0.15 0.4 rg
+50 718 Td
 (PROFESSIONAL SUMMARY) Tj
-/F2 10 Tf
-0 -16 Td
-(High-impact Full-Stack Software Engineer with proven expertise building resilient Next.js 15 applications,) Tj
-0 -13 Td
-(RESTful microservices, and high-performance PostgreSQL architectures. Passionate about clean code, scalable) Tj
-0 -13 Td
-(systems, and modern TypeScript workflows.) Tj
-0 -25 Td
-/F1 14 Tf
+ET
+/F1 9 Tf
+0 0 0 rg
+BT
+/F1 9 Tf
+50 704 Td
+(Motivated Software Engineering student at University of Kotli, AJK with strong expertise in mobile and web development.) Tj
+ET
+BT
+/F1 9 Tf
+50 692 Td
+(Skilled in Flutter, React Native, Python \(FastAPI\), JavaScript, Next.js, and database systems \(PostgreSQL, SQLite, MySQL\).) Tj
+ET
+BT
+/F1 9 Tf
+50 680 Td
+(Proven leadership and administrative track record through conference event management and computer operations experience.) Tj
+ET
+BT
+/F2 11 Tf
+0.15 0.15 0.4 rg
+50 660 Td
 (TECHNICAL SKILLS) Tj
-/F2 10 Tf
-0 -16 Td
-(Frontend: React, Next.js 15, TypeScript, Tailwind CSS, Responsive Design, State Management) Tj
-0 -13 Td
-(Backend: Node.js, Express.js, PostgreSQL, Prisma ORM, RESTful APIs, JWT Authentication) Tj
-0 -13 Td
-(Tools & DevOps: Git, GitHub, Docker, CI/CD, Vercel, VS Code, Postman) Tj
-0 -25 Td
-/F1 14 Tf
-(PROFESSIONAL EXPERIENCE) Tj
-/F1 11 Tf
-0 -16 Td
-(Senior Full-Stack Engineer - TechNova Solutions) Tj
-/F2 9 Tf
-0 -13 Td
-(2024 - Present | Remote / Hybrid) Tj
-0 -13 Td
-(- Spearheaded migration to Next.js 15 App Router, improving Lighthouse score from 72 to 98.) Tj
-0 -12 Td
-(- Optimized PostgreSQL database queries and Prisma ORM indexing, slashing p95 latency by 42%.) Tj
-0 -12 Td
-(- Standardized team code quality benchmarks, unit tests, and automated deployment pipelines.) Tj
-/F1 11 Tf
-0 -18 Td
-(Full-Stack Developer - Apex Digital Labs) Tj
-/F2 9 Tf
-0 -13 Td
-(2023 - 2024 | On-Site) Tj
-0 -13 Td
-(- Built customer-facing platforms with JWT authentication, role-based access control, and Stripe.) Tj
-0 -12 Td
-(- Created modular UI component libraries with Tailwind CSS, speeding up release cycles by 30%.) Tj
-0 -25 Td
-/F1 14 Tf
-(EDUCATION) Tj
-/F1 11 Tf
-0 -16 Td
-(Bachelor of Science in Computer Science (BSCS)) Tj
-/F2 9 Tf
-0 -13 Td
-(National University of Sciences & Technology | CGPA: 3.8 / 4.0 | 2019 - 2023) Tj
-0 -13 Td
-(- Dean's Honor Roll recipient. Core focus: Algorithms, Distributed Systems, Database Architecture.) Tj
+ET
+/F1 9 Tf
+0 0 0 rg
+BT
+/F1 9 Tf
+50 646 Td
+(Mobile & Frontend: Flutter, Dart, React Native, Expo, Next.js, TypeScript, Tailwind CSS, Android App Development) Tj
+ET
+BT
+/F1 9 Tf
+50 634 Td
+(Backend & DB: Python \(FastAPI\), PHP, Node.js, PostgreSQL \(Neon\), MySQL, SQLite, Cloud Firestore, Prisma ORM) Tj
+ET
+BT
+/F1 9 Tf
+50 622 Td
+(DevOps & Tools: Docker, Git, REST APIs, Linux/Windows Server, Bluetooth ESC/POS Thermal Printing, Postman) Tj
+ET
+BT
+/F1 9 Tf
+50 610 Td
+(Languages: English \(Professional proficiency\), Urdu \(Native\)) Tj
+ET
+BT
+/F2 11 Tf
+0.15 0.15 0.4 rg
+50 590 Td
+(FLAGSHIP SOFTWARE PROJECTS) Tj
+ET
+/F1 9 Tf
+0 0 0 rg
+BT
+/F2 9.5 Tf
+50 576 Td
+(VICE DINE POS - Retro Vice City Edition) Tj
+ (  |  Flutter, Dart, SQLite, Cloud Firestore, Bluetooth ESC/POS) Tj
+ET
+BT
+/F1 8.5 Tf
+62 564 Td
+(- Engineered offline-first restaurant POS with local SQLite storage, split table billing, and cloud telemetry sync.) Tj
+ET
+BT
+/F1 8.5 Tf
+62 553 Td
+(- Integrated Bluetooth ESC/POS thermal printing pipeline and Urdu/Roman Urdu AI voice assistant.) Tj
+ET
+BT
+/F2 9.5 Tf
+50 542 Td
+(EnergyMitr - Smart Energy Tracking & Utility Platform) Tj
+ (  |  React Native, Expo, Vite, Python FastAPI, PostgreSQL) Tj
+ET
+BT
+/F1 8.5 Tf
+62 530 Td
+(- Built smart electricity consumption tracking mobile and web system with smart meter telemetry APIs and bill analytics.) Tj
+ET
+BT
+/F2 9.5 Tf
+50 519 Td
+(VoltSend - SaaS Web Push Notification Engine) Tj
+ (  |  PHP, MySQL, Android WebView Client, REST APIs) Tj
+ET
+BT
+/F1 8.5 Tf
+62 507 Td
+(- Architected developer-focused push delivery backend with automated retry queues and Android WebView wrapper.) Tj
+ET
+BT
+/F2 11 Tf
+0.15 0.15 0.4 rg
+50 488 Td
+(WORK EXPERIENCE & LEADERSHIP) Tj
+ET
+/F1 9 Tf
+0 0 0 rg
+BT
+/F2 9.5 Tf
+50 474 Td
+(Head of Management - Campus Conference Event \(May 2026\)) Tj
+ (  |  University of Kotli, AJK) Tj
+ET
+BT
+/F1 8.5 Tf
+62 462 Td
+(- Managed 3-day multi-purpose hall conference operations for 500-600 guests, faculty, and student delegates.) Tj
+ET
+BT
+/F1 8.5 Tf
+62 451 Td
+(- Directed guest accreditation, audiovisual pipelines, stage management, and safety protocols with zero delays.) Tj
+ET
+BT
+/F2 9.5 Tf
+50 440 Td
+(Data Entry Operator & Computer Operator \(1.5 Years\)) Tj
+ (  |  Master Internet Cafe, Kotli) Tj
+ET
+BT
+/F1 8.5 Tf
+62 428 Td
+(- Entered, updated, and audited computerized records ensuring quality, accuracy, and strict data confidentiality.) Tj
+ET
+BT
+/F1 8.5 Tf
+62 417 Td
+(- Operated administrative office systems, document printing, digital filing, and client technical support.) Tj
+ET
+BT
+/F2 11 Tf
+0.15 0.15 0.4 rg
+50 398 Td
+(EDUCATION & CERTIFICATIONS) Tj
+ET
+/F1 9 Tf
+0 0 0 rg
+BT
+/F2 9.5 Tf
+50 384 Td
+(Bachelor of Science in Software Engineering \(BSSE\)) Tj
+ (  |  University of Kotli, Azad Jammu & Kashmir \(Ongoing\)) Tj
+ET
+BT
+/F1 8.5 Tf
+62 372 Td
+(- Focus: Software Architecture, Mobile Application Development, Distributed Systems, Database Management) Tj
+ET
+BT
+/F2 9.5 Tf
+50 361 Td
+(Diploma in Computer Operation) Tj
+ (  |  Friends Institute of Kotli \(Completed\)) Tj
+ET
+BT
+/F1 8.5 Tf
+62 349 Td
+(- Office automation, documentation, spreadsheet management, and hardware maintenance.) Tj
+ET
+BT
+/F2 9.5 Tf
+50 338 Td
+(Intermediate \(ICS - Computer Science\)) Tj
+ (  |  Government Intermediate Science College Kotli, AJK) Tj
+ET
+BT
+/F1 8.5 Tf
+62 326 Td
+(- Score: 736 Marks. Core: Computer Science, Mathematics, Statistics, Physics.) Tj
+ET
+BT
+/F2 9.5 Tf
+50 315 Td
+(Matriculation \(Computer Science\)) Tj
+ (  |  Ibne Sina Model College Kotli) Tj
+ET
+BT
+/F1 8.5 Tf
+62 303 Td
+(- Score: 815 Marks with First Division.) Tj
 ET
 endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 xref
 0 7
@@ -89,11 +232,11 @@ xref
 0000000009 00000 n 
 0000000058 00000 n 
 0000000115 00000 n 
-0000000318 00000 n 
-0000000216 00000 n 
-0000000288 00000 n 
+0000000256 00000 n 
+0000004855 00000 n 
+0000004935 00000 n 
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-1600
+5015
 %%EOF

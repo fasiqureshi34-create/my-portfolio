@@ -8,7 +8,7 @@ const navLinks = [
   { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
   { name: "Education", href: "#education" },
-  { name: "Resume", href: "#resume" },
+  { name: "CV", href: "#resume" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -50,7 +50,7 @@ export default function Footer() {
               <GithubIcon size={18} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/fasi-qureshi-1b5764353"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -59,13 +59,13 @@ export default function Footer() {
               <LinkedinIcon size={18} />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://wa.me/923055219276"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Twitter / X"
-              className="rounded-lg p-2 text-zinc-400 hover:text-white hover:bg-white/[0.05] transition"
+              aria-label="WhatsApp"
+              className="rounded-lg p-2 text-zinc-400 hover:text-white hover:bg-white/[0.05] transition text-xs font-semibold"
             >
-              <TwitterIcon size={16} />
+              WhatsApp
             </a>
           </div>
         </div>

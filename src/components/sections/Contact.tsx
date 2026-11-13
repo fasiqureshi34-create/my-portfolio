@@ -11,6 +11,8 @@ import {
   Clock,
   Copy,
   Check,
+  Phone,
+  MessageSquare,
 } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/BrandIcons";
@@ -25,14 +27,23 @@ export default function Contact() {
 
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
-  const [copied, setCopied] = useState(false);
+  const [copiedEmail, setCopiedEmail] = useState(false);
+  const [copiedPhone, setCopiedPhone] = useState(false);
 
-  const myEmail = "fasi.developer@gmail.com";
+  const myEmail = "fasiqureshi34@gmail.com";
+  const myPhone = "03055219276";
+  const formattedPhone = "+92 305 5219276";
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(myEmail);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
+    setCopiedEmail(true);
+    setTimeout(() => setCopiedEmail(false), 2500);
+  };
+
+  const handleCopyPhone = () => {
+    navigator.clipboard.writeText(myPhone);
+    setCopiedPhone(true);
+    setTimeout(() => setCopiedPhone(false), 2500);
   };
 
   const handleChange = (
@@ -106,7 +117,54 @@ export default function Contact() {
 
         <div className="grid gap-12 lg:grid-cols-[1fr_1.35fr]">
           {/* Left Column: Direct Info Cards */}
-          <div className="space-y-6">
+          <div className="space-y-5">
+            {/* Direct Phone & WhatsApp Card */}
+            <div className="glass-card rounded-2xl p-6 border border-emerald-500/20 bg-emerald-950/10">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-400">
+                    <Phone size={22} />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400">
+                      Phone &amp; WhatsApp
+                    </p>
+                    <a
+                      href={`tel:${myPhone}`}
+                      className="mt-1 block text-base font-semibold text-white hover:text-emerald-300 transition"
+                    >
+                      {formattedPhone}
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://wa.me/923055219276"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-lg border border-emerald-500/30 bg-emerald-500/15 p-2 text-emerald-300 hover:bg-emerald-500/25 transition cursor-pointer"
+                    title="Chat on WhatsApp"
+                  >
+                    <MessageSquare size={16} />
+                  </a>
+
+                  <button
+                    type="button"
+                    onClick={handleCopyPhone}
+                    className="rounded-lg border border-white/10 bg-white/[0.04] p-2 text-zinc-400 hover:text-white hover:border-violet-400/40 transition cursor-pointer"
+                    title="Copy phone number"
+                  >
+                    {copiedPhone ? (
+                      <Check size={16} className="text-green-400" />
+                    ) : (
+                      <Copy size={16} />
+                    )}
+                  </button>
+                </div>
+              </div>
+            </div>
+
             {/* Email Card */}
             <div className="glass-card rounded-2xl p-6 border border-white/[0.06]">
               <div className="flex items-center justify-between">
@@ -133,7 +191,7 @@ export default function Contact() {
                   className="rounded-lg border border-white/10 bg-white/[0.04] p-2 text-zinc-400 hover:text-white hover:border-violet-400/40 transition cursor-pointer"
                   title="Copy email to clipboard"
                 >
-                  {copied ? (
+                  {copiedEmail ? (
                     <Check size={16} className="text-green-400" />
                   ) : (
                     <Copy size={16} />
@@ -150,30 +208,13 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400">
-                    Location & Timezone
+                    Location &amp; Timezone
                   </p>
                   <p className="mt-1 text-base font-semibold text-white">
                     Kotli, Azad Jammu &amp; Kashmir, Pakistan
                   </p>
                   <p className="text-xs text-zinc-400 mt-0.5">
                     PKT (UTC+5) • Open for Worldwide Remote &amp; On-Site Roles
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Response Time Guarantee */}
-            <div className="glass-card rounded-2xl p-6 border border-white/[0.06]">
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-violet-500/15 text-violet-300">
-                  <Clock size={22} />
-                </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400">
-                    Expected Response Time
-                  </p>
-                  <p className="mt-1 text-sm font-medium text-zinc-200">
-                    Typically responds within <span className="text-violet-300 font-semibold">24 hours</span>.
                   </p>
                 </div>
               </div>
@@ -186,6 +227,16 @@ export default function Contact() {
               </p>
               <div className="flex items-center gap-4">
                 <a
+                  href="https://www.linkedin.com/in/fasi-qureshi-1b5764353"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-zinc-300 hover:border-violet-400/50 hover:bg-violet-500/15 hover:text-white transition"
+                  aria-label="LinkedIn Profile"
+                >
+                  <LinkedinIcon size={20} />
+                </a>
+
+                <a
                   href="https://github.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -196,23 +247,13 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="https://linkedin.com"
+                  href="https://wa.me/923055219276"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-zinc-300 hover:border-violet-400/50 hover:bg-violet-500/15 hover:text-white transition"
-                  aria-label="LinkedIn Profile"
+                  className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-emerald-400 hover:border-emerald-500/50 hover:bg-emerald-500/15 hover:text-white transition"
+                  aria-label="WhatsApp Direct"
                 >
-                  <LinkedinIcon size={20} />
-                </a>
-
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-zinc-300 hover:border-violet-400/50 hover:bg-violet-500/15 hover:text-white transition"
-                  aria-label="Twitter / X Profile"
-                >
-                  <TwitterIcon size={18} />
+                  <Phone size={18} />
                 </a>
               </div>
             </div>
@@ -308,7 +349,7 @@ export default function Contact() {
                     id="subject"
                     name="subject"
                     type="text"
-                    placeholder="Project Inquiry, Consultation, Mobile App Collaboration"
+                    placeholder="Project Inquiry, Mobile App Collaboration"
                     value={formData.subject}
                     onChange={handleChange}
                     disabled={status === "loading"}

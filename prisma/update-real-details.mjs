@@ -3,11 +3,11 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log("🚀 Updating Neon Database with Fasi's real personal and technical portfolio details...\n");
+  console.log("🚀 Updating Neon Database with Fasi's full CV details...\n");
 
-  // 1. Update Projects
+  // 1. Projects
   console.log("📦 1. Synchronizing Flagship Projects...");
-  await prisma.project.deleteMany({}); // Clear existing to prevent duplicate slugs
+  await prisma.project.deleteMany({});
   await prisma.project.createMany({
     data: [
       {
@@ -59,63 +59,16 @@ async function main() {
       },
     ],
   });
-  console.log("   ✅ 3 Flagship Projects updated in Neon DB.");
+  console.log("   ✅ 3 Flagship Projects synchronized.");
 
-  // 2. Update Skills
-  console.log("🛠️ 2. Synchronizing Technical Skills...");
-  await prisma.skill.deleteMany({});
-  await prisma.skill.createMany({
-    data: [
-      {
-        category: "Mobile & Frontend",
-        description: "Cross-platform mobile apps & responsive, modern web interfaces.",
-        skills: [
-          "Flutter",
-          "Dart",
-          "React Native",
-          "Expo",
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-        ],
-      },
-      {
-        category: "Backend & Databases",
-        description: "High-throughput APIs, offline databases & cloud document stores.",
-        skills: [
-          "Python (FastAPI)",
-          "PHP",
-          "Node.js",
-          "PostgreSQL (Neon)",
-          "MySQL",
-          "SQLite",
-          "Cloud Firestore",
-          "Prisma",
-        ],
-      },
-      {
-        category: "DevOps & Tools",
-        description: "Deployment pipelines, version control & hardware communication.",
-        skills: [
-          "Docker",
-          "Git",
-          "REST APIs",
-          "Linux/Windows Server",
-          "ESC/POS Thermal Printing",
-        ],
-      },
-    ],
-  });
-  console.log("   ✅ Technical skills synchronized in Neon DB.");
-
-  // 3. Update Experiences
-  console.log("💼 3. Synchronizing Experience & Leadership...");
+  // 2. Experiences
+  console.log("💼 2. Synchronizing Full Experience Timeline...");
   await prisma.experience.deleteMany({});
   await prisma.experience.createMany({
     data: [
       {
         role: "Full-Stack Web & Mobile Software Engineer",
-        company: "Freelance & Independent Projects",
+        company: "Independent & Flagship Projects",
         location: "Kotli, AJK, Pakistan (Remote)",
         type: "Contract / Independent",
         period: "2023 - Present",
@@ -160,12 +113,42 @@ async function main() {
           "Protocol Management",
         ],
       },
+      {
+        role: "Data Entry Operator",
+        company: "Master Internet Cafe",
+        location: "Kotli, Azad Jammu & Kashmir",
+        type: "Professional",
+        period: "1 Year",
+        current: false,
+        description:
+          "Entered, updated, and verified electronic records in computer systems maintaining confidentiality and high accuracy.",
+        achievements: [
+          "Audited computerized records ensuring quality, accuracy, and data consistency.",
+          "Handled client document workflows and electronic submissions.",
+        ],
+        skills: ["Data Verification", "Record Management", "Quality Assurance"],
+      },
+      {
+        role: "Computer Operator",
+        company: "Master Internet Cafe",
+        location: "Kotli, Azad Jammu & Kashmir",
+        type: "Professional",
+        period: "6 Months",
+        current: false,
+        description:
+          "Operated digital computer systems and administrative office software for client documentation and printing.",
+        achievements: [
+          "Managed official typing, document formatting, and high-volume hardware printing.",
+          "Provided workstation troubleshooting and client technical support.",
+        ],
+        skills: ["Computer Operations", "Document Formatting", "Hardware Peripherals"],
+      },
     ],
   });
-  console.log("   ✅ Experiences synchronized in Neon DB.");
+  console.log("   ✅ 4 Experience records synchronized.");
 
-  // 4. Update Education
-  console.log("🎓 4. Synchronizing Education...");
+  // 3. Education
+  console.log("🎓 3. Synchronizing Full Education Records...");
   await prisma.education.deleteMany({});
   await prisma.education.createMany({
     data: [
@@ -175,20 +158,56 @@ async function main() {
         institution: "University of Kotli, Azad Jammu & Kashmir",
         location: "Kotli, AJK, Pakistan",
         period: "2022 - Present",
-        grade: "In Progress",
+        grade: "Ongoing",
         description:
-          "Rigorous academic curriculum with specialization in Software Architecture, Cross-Platform Mobile Engineering, Database Management Systems, and Object-Oriented Analysis & Design.",
+          "Specialization in Software Architecture, Cross-Platform Mobile Engineering, Database Management Systems, and Distributed Systems.",
         highlights: [
-          "Head of Management for multi-purpose university conference event (500-600 guests)",
-          "Focus: Software Design Patterns, Mobile App Architecture, Distributed Systems, SQL/NoSQL Databases",
-          "Lead developer on multiple departmental and independent software showcase projects",
+          "Head of Management for multi-purpose university conference event (500–600 guests)",
+          "Lead developer on departmental and independent software showcase projects",
         ],
+      },
+      {
+        degree: "Diploma",
+        field: "Computer Operation",
+        institution: "Friends Institute of Kotli",
+        location: "Kotli, AJK, Pakistan",
+        period: "Completed",
+        grade: "Certified",
+        description:
+          "Practical diploma covering digital computer operations, documentation, and office automation software.",
+        highlights: [
+          "Practical mastery in document automation, spreadsheet data, and database entry",
+        ],
+      },
+      {
+        degree: "Intermediate in Computer Science (ICS)",
+        field: "Computer Science & Mathematics",
+        institution: "Government Intermediate Science College Kotli",
+        location: "Kotli, AJK, Pakistan",
+        period: "Completed",
+        grade: "Score: 736 Marks",
+        description:
+          "Rigorous pre-university academic foundation in Computer Science, Advanced Mathematics, and Physics.",
+        highlights: [
+          "Strong foundation in algorithmic reasoning and mathematical problem solving",
+        ],
+      },
+      {
+        degree: "Matriculation",
+        field: "Computer Science",
+        institution: "Ibne Sina Model College Kotli",
+        location: "Kotli, AJK, Pakistan",
+        period: "Completed",
+        grade: "Score: 815 Marks (First Division)",
+        description:
+          "Secondary school education focusing on science and computer foundations with first division honors.",
+        highlights: ["First Division honors in science and computing curriculum"],
       },
     ],
   });
-  console.log("   ✅ Education records synchronized in Neon DB.");
+  console.log("   ✅ 4 Education records synchronized.");
 
-  console.log("\n🎉 ALL DATABASE MODELS SUCCESSFULLY UPDATED IN NEON POSTGRESQL!");
+  console.log("\n🎉 NEON POSTGRESQL DB FULLY SYNCHRONIZED!");
 }
 
 main()
@@ -196,6 +215,4 @@ main()
     console.error("❌ Error updating database:", e);
     process.exit(1);
   })
-  .finally(async () => {
-    await prisma.$disconnect();
-  });
+  .finally(() => prisma.$disconnect());

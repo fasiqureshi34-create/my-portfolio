@@ -15,7 +15,7 @@ export const experiences: ExperienceItem[] = [
   {
     id: "exp-1",
     role: "Full-Stack Web & Mobile Software Engineer",
-    company: "Freelance & Independent Projects",
+    company: "Independent & Flagship Projects",
     location: "Kotli, AJK, Pakistan (Remote)",
     type: "Contract / Independent",
     period: "2023 - Present",
@@ -45,5 +45,37 @@ export const experiences: ExperienceItem[] = [
       "Delivered zero-delay event execution throughout all three conference days with commendation from department leadership."
     ],
     skills: ["Event Operations", "Team Leadership", "Crisis Management", "Public Relations", "Protocol Management"]
+  },
+  {
+    id: "exp-3",
+    role: "Data Entry Operator",
+    company: "Master Internet Cafe",
+    location: "Kotli, Azad Jammu & Kashmir",
+    type: "Professional",
+    period: "1 Year",
+    current: false,
+    description:
+      "Responsible for accurate electronic record management, data processing, and document formatting.",
+    achievements: [
+      "Entered, updated, and audited computerized records ensuring data quality, precision, and confidentiality.",
+      "Managed client document workflows, digital file organization, and official online submissions."
+    ],
+    skills: ["Data Verification", "Record Management", "Fast Typing", "MS Office", "Quality Assurance"]
+  },
+  {
+    id: "exp-4",
+    role: "Computer Operator",
+    company: "Master Internet Cafe",
+    location: "Kotli, Azad Jammu & Kashmir",
+    type: "Professional",
+    period: "6 Months",
+    current: false,
+    description:
+      "Operated digital computer systems, client technical workstations, and administrative office documentation software.",
+    achievements: [
+      "Handled official typing, document formatting, high-volume printing, and peripheral hardware operation.",
+      "Provided customer technical support, troubleshooting internet connections and system configurations."
+    ],
+    skills: ["Computer Operations", "Document Formatting", "Hardware Peripherals", "Customer Support"]
   }
 ];
