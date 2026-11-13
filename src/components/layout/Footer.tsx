@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Brand Logo */}
           <a href="#home" className="text-xl font-bold tracking-tight">
             <span className="gradient-text">{"<"}</span>
-            <span className="text-white">FullStack</span>
+            <span className="text-white">Fasi</span>
             <span className="text-violet-400 font-mono">.Dev</span>
             <span className="gradient-text">{" />"}</span>
           </a>
@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col items-center justify-between gap-4 pt-8 text-xs text-zinc-500 sm:flex-row">
           <p>
-            &copy; {new Date().getFullYear()} Full-Stack Portfolio. Built with Next.js 15, Neon PostgreSQL & Prisma.
+            &copy; {new Date().getFullYear()} Fasi Ur Rehman (Fasi Qureshi). Built with Next.js 15, Neon PostgreSQL & Prisma.
           </p>
 
           <div className="flex items-center gap-6">

@@ -2,27 +2,46 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 const skillGroups = [
   {
-    category: "Frontend Development",
-    description: "Building responsive and interactive interfaces.",
+    category: "Mobile & Frontend",
+    description: "Cross-platform mobile apps & responsive, modern web interfaces.",
     skills: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
+      "Flutter",
+      "Dart",
+      "React Native",
+      "Expo",
+      "Next.js 15",
       "TypeScript",
-      "React",
-      "Next.js",
       "Tailwind CSS",
+      "HTML5 / CSS3",
     ],
   },
   {
-    category: "Backend Development",
-    description: "Building APIs and server-side applications.",
-    skills: ["Node.js", "Express.js", "REST APIs", "PostgreSQL", "MongoDB"],
+    category: "Backend & Databases",
+    description: "High-throughput APIs, offline databases & cloud document stores.",
+    skills: [
+      "Python (FastAPI)",
+      "PHP",
+      "Node.js",
+      "PostgreSQL (Neon)",
+      "MySQL",
+      "SQLite",
+      "Cloud Firestore",
+      "Prisma ORM",
+    ],
   },
   {
-    category: "Tools & Workflow",
-    description: "Development, collaboration and deployment tools.",
-    skills: ["Git", "GitHub", "VS Code", "Docker", "Vercel", "Figma"],
+    category: "DevOps & Tools",
+    description: "Deployment pipelines, version control & hardware communication.",
+    skills: [
+      "Docker",
+      "Git / GitHub",
+      "REST APIs",
+      "Linux Server",
+      "Windows Server",
+      "ESC/POS Thermal Printing",
+      "Postman",
+      "VS Code",
+    ],
   },
 ];
 
@@ -33,19 +52,19 @@ export default function Skills() {
         <SectionHeading
           eyebrow="02 — Technical Skills"
           title="My technology stack."
-          description="Technologies and tools I use to design, build and deliver software."
+          description="Technologies, frameworks, and database architectures I use to design, build, and deploy production software."
         />
 
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((group) => (
             <div
               key={group.category}
-              className="glass-card rounded-2xl p-7 transition duration-300 hover:-translate-y-1 hover:border-violet-400/30"
+              className="glass-card rounded-2xl p-7 transition duration-300 hover:-translate-y-1 hover:border-violet-400/30 border border-white/[0.06]"
             >
               <h3 className="text-lg font-semibold text-white">
                 {group.category}
               </h3>
-              <p className="mt-3 min-h-12 text-sm leading-6 text-zinc-400">
+              <p className="mt-2 min-h-12 text-xs sm:text-sm leading-6 text-zinc-400">
                 {group.description}
               </p>
 
@@ -53,7 +72,7 @@ export default function Skills() {
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2 text-xs text-zinc-300"
+                    className="rounded-lg border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-zinc-200 font-mono"
                   >
                     {skill}
                   </span>

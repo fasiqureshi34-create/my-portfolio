@@ -11,7 +11,6 @@ import {
   ArrowRight,
   ShieldAlert,
   Loader2,
-  Sparkles,
   ArrowLeft,
 } from "lucide-react";
 
@@ -56,12 +55,6 @@ function LoginForm() {
     }
   };
 
-  const handleFillDemo = () => {
-    setIdentifier("admin");
-    setPassword("Admin2026!");
-    setError(null);
-  };
-
   return (
     <div className="relative z-10 w-full max-w-md rounded-2xl border border-white/10 bg-zinc-900/60 p-8 shadow-2xl backdrop-blur-2xl">
       {/* Header */}
@@ -73,7 +66,7 @@ function LoginForm() {
           Admin Portal
         </h1>
         <p className="text-sm text-zinc-400 mt-1">
-          Authenticate to manage inquiries & portfolio content
+          Authenticate to manage inquiries &amp; portfolio content
         </p>
       </div>
 
@@ -101,7 +94,7 @@ function LoginForm() {
               required
               value={identifier}
               onChange={(e) => setIdentifier(e.target.value)}
-              placeholder="admin or admin@portfolio.dev"
+              placeholder="Enter your admin username or email"
               className="w-full rounded-xl border border-white/10 bg-black/40 pl-10 pr-4 py-3 text-sm text-white placeholder-zinc-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500 transition"
             />
           </div>
@@ -127,7 +120,7 @@ function LoginForm() {
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-zinc-400 hover:text-white transition"
+              className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-zinc-400 hover:text-white transition cursor-pointer"
               tabIndex={-1}
             >
               {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
@@ -154,18 +147,6 @@ function LoginForm() {
           )}
         </button>
       </form>
-
-      {/* Quick Demo Credentials Helper */}
-      <div className="mt-6 pt-5 border-t border-white/[0.08] text-center">
-        <button
-          type="button"
-          onClick={handleFillDemo}
-          className="inline-flex items-center gap-1.5 text-xs text-violet-400 hover:text-violet-300 font-mono transition bg-violet-500/10 hover:bg-violet-500/15 border border-violet-500/20 px-3 py-1.5 rounded-lg cursor-pointer"
-        >
-          <Sparkles size={14} />
-          Auto-Fill Admin Credentials
-        </button>
-      </div>
     </div>
   );
 }
@@ -202,7 +183,7 @@ export default function AdminLoginPage() {
 
       {/* Footer Info */}
       <div className="relative z-10 mt-8 text-center text-xs text-zinc-500">
-        Protected with HTTP-only JWT & Neon PostgreSQL encryption
+        Protected with HTTP-only JWT &amp; Neon PostgreSQL encryption
       </div>
     </div>
   );
