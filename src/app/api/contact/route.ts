@@ -46,13 +46,11 @@ export async function POST(req: NextRequest) {
         );
       } catch (dbError) {
         console.error("Database save error:", dbError);
-        // Fallback response with notice
         return NextResponse.json(
           {
-            success: true,
-            notice: "Message received (database connection pending sync).",
+            error: "Failed to save message to database. Please try again later.",
           },
-          { status: 200 }
+          { status: 500 }
         );
       }
     }

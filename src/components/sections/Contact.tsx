@@ -75,29 +75,28 @@ export default function Contact() {
     setErrorMessage("");
 
     try {
-      // Attempt backend API call
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
 
-      if (res.ok) {
+      const data = await res.json();
+
+      if (res.ok && data.success) {
         setStatus("success");
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        // Fallback for frontend demo stage before API is wired to DB
-        setTimeout(() => {
-          setStatus("success");
-          setFormData({ name: "", email: "", subject: "", message: "" });
-        }, 800);
+        setStatus("error");
+        setErrorMessage(
+          data.error || "Failed to send message. Please try again."
+        );
       }
     } catch {
-      // Graceful fallback for frontend preview
-      setTimeout(() => {
-        setStatus("success");
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      }, 600);
+      setStatus("error");
+      setErrorMessage(
+        "Network connection error. Please verify your internet and try again."
+      );
     }
   };
 
