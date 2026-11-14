@@ -7,5 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/admin/", "/api/admin/"],
     },
+    sitemap: "https://my-portfolio-phi-nine-38.vercel.app/sitemap.xml",
   };
 }
