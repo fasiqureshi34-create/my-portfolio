@@ -237,7 +237,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="https://github.com"
+                  href="https://github.com/fasiqureshi34-create"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-zinc-300 hover:border-violet-400/50 hover:bg-violet-500/15 hover:text-white transition"

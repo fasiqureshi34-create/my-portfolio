@@ -41,7 +41,7 @@ export default function Footer() {
           {/* Social Icons */}
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com"
+              href="https://github.com/fasiqureshi34-create"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"

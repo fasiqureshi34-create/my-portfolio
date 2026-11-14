@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://my-portfolio-phi-nine-38.vercel.app";
 
 export const viewport: Viewport = {
   themeColor: "#08080c",

@@ -74,6 +74,16 @@ export default function Hero() {
           {/* Socials & Direct Contact Icons */}
           <div className="mt-10 flex items-center gap-4 text-zinc-400">
             <a
+              href="https://github.com/fasiqureshi34-create"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub Profile"
+              className="rounded-xl border border-white/10 bg-white/[0.04] p-3 text-zinc-300 transition hover:border-violet-400 hover:bg-violet-500/15 hover:text-white"
+            >
+              <GithubIcon size={20} />
+            </a>
+
+            <a
               href="https://www.linkedin.com/in/fasi-qureshi-1b5764353"
               target="_blank"
               rel="noreferrer"

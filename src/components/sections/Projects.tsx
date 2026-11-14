@@ -17,8 +17,8 @@ const fallbackProjects = [
       "Cloud Firestore",
       "Bluetooth ESC/POS",
     ],
-    github: "https://github.com/",
-    demo: "https://example.com",
+    github: "https://github.com/fasiqureshi34-create",
+    demo: "https://my-portfolio-phi-nine-38.vercel.app",
   },
   {
     number: "02",
@@ -33,8 +33,8 @@ const fallbackProjects = [
       "esbuild",
       "Faker.js",
     ],
-    github: "https://github.com/",
-    demo: "https://example.com",
+    github: "https://github.com/fasiqureshi34-create",
+    demo: "https://my-portfolio-phi-nine-38.vercel.app",
   },
   {
     number: "03",
@@ -49,8 +49,8 @@ const fallbackProjects = [
       "Hive",
       "Bluetooth Thermal",
     ],
-    github: "https://github.com/",
-    demo: "https://example.com",
+    github: "https://github.com/fasiqureshi34-create",
+    demo: "https://my-portfolio-phi-nine-38.vercel.app",
   },
   {
     number: "04",
@@ -64,8 +64,8 @@ const fallbackProjects = [
       "Python FastAPI",
       "REST APIs",
     ],
-    github: "https://github.com/",
-    demo: "https://example.com",
+    github: "https://github.com/fasiqureshi34-create",
+    demo: "https://my-portfolio-phi-nine-38.vercel.app",
   },
   {
     number: "05",
@@ -78,8 +78,8 @@ const fallbackProjects = [
       "JavaScript",
       "Android WebView",
     ],
-    github: "https://github.com/",
-    demo: "https://example.com",
+    github: "https://github.com/fasiqureshi34-create",
+    demo: "https://my-portfolio-phi-nine-38.vercel.app",
   },
 ];
 
