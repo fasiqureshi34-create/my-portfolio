@@ -40,15 +40,15 @@ export default function Hero() {
           </p>
 
           <h1 className="max-w-4xl text-4xl font-bold leading-[1.12] tracking-tight sm:text-5xl lg:text-6xl">
-            Full-Stack Web &amp;
+            Full-Stack Web,
             <br />
-            Mobile Software
+            Mobile &amp; Desktop
             <br />
-            <span className="gradient-text">Engineer.</span>
+            <span className="gradient-text">Software Engineer.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-zinc-300 sm:text-lg">
-            Specializing in offline-first mobile apps, intelligent IoT telemetry platforms, and high-concurrency web systems using <span className="text-white font-medium">Flutter</span>, <span className="text-white font-medium">React Native</span>, <span className="text-white font-medium">Next.js</span>, and <span className="text-white font-medium">Python FastAPI</span>.
+            Specializing in cross-platform mobile &amp; desktop applications, offline-first architectures, intelligent IoT telemetry platforms, and high-concurrency web systems using <span className="text-white font-medium">Flutter</span>, <span className="text-white font-medium">Electron</span>, <span className="text-white font-medium">React Native</span>, <span className="text-white font-medium">Next.js</span>, and <span className="text-white font-medium">Python FastAPI</span>.
           </p>
 
           {/* Action Buttons */}
@@ -140,7 +140,7 @@ export default function Hero() {
                 <Terminal size={13} />
                 Kotli, AJK
               </span>
-              <span>Python • Flutter • Next.js</span>
+              <span>Flutter • Electron • Python • Next.js</span>
             </div>
           </div>
         </div>

@@ -14,37 +14,55 @@ export interface ExperienceItem {
 export const experiences: ExperienceItem[] = [
   {
     id: "exp-1",
-    role: "Full-Stack Web & Mobile Software Engineer",
+    role: "Full-Stack Web, Mobile & Desktop Software Engineer",
     company: "Independent & Flagship Projects",
     location: "Kotli, AJK, Pakistan (Remote)",
-    type: "Contract / Independent",
+    type: "Engineering",
     period: "2023 - Present",
     current: true,
     description:
-      "Engineering end-to-end production applications ranging from offline-first mobile systems to IoT energy telemetry dashboards and SaaS notification backends.",
+      "Engineering end-to-end production software across mobile, desktop, and web architectures—delivering offline-first POS terminals, high-concurrency desktop stress testers, and IoT energy analytics platforms.",
     achievements: [
-      "Engineered VICE DINE POS with Flutter, local SQLite storage, Bluetooth thermal printing, and bilingual AI voice assistant.",
-      "Developed EnergyMitr IoT analytics platform integrating React Native, Vite frontend, and Python FastAPI telemetry microservices.",
-      "Created VoltSend push notification distribution infrastructure with PHP, MySQL, and Android client apps."
+      "Engineered VICE DINE POS with Flutter, Flame 2D engine, SQLite, Bluetooth thermal printing, and bilingual AI voice assistant.",
+      "Developed APT Desktop API load tester in Electron + React supporting 200 concurrent workers and 10,000 requests per run.",
+      "Built Bismillah Takeaway POS with Hive NoSQL caching, Firestore sync, and Bluetooth receipt printing.",
+      "Architected EnergyMitr telemetry platform integrating React Native, Vite frontend, and Python FastAPI microservices.",
+      "Created VoltSend push notification platform paired with PHP, MySQL, and Android client apps.",
     ],
-    skills: ["Flutter", "React Native", "Next.js", "Python FastAPI", "PostgreSQL", "SQLite", "PHP", "Docker"]
+    skills: [
+      "Flutter",
+      "Electron",
+      "React Native",
+      "Next.js",
+      "Python FastAPI",
+      "PostgreSQL",
+      "SQLite",
+      "Hive",
+      "Docker",
+    ],
   },
   {
     id: "exp-2",
-    role: "Head of Management – Campus Conference Event",
+    role: "Head of Management – University Campus Event",
     company: "University of Kotli, AJK",
     location: "Kotli, Azad Kashmir",
     type: "Leadership",
     period: "May 2026",
     current: false,
     description:
-      "Spearheaded operations and logistics for a major 3-day university conference held in the multi-purpose auditorium, hosting 500–600 distinguished guests, faculty members, and student delegates.",
+      "Led operational execution and crowd management for a 3-day multi-purpose hall university event hosting 500–600 guests at University of Kotli, AJK.",
     achievements: [
-      "Directed cross-functional student teams across security, guest accreditation, multimedia scheduling, and protocol management.",
-      "Coordinated auditorium seating layouts, speaker stage audio-visual pipelines, and executive hospitality.",
-      "Delivered zero-delay event execution throughout all three conference days with commendation from department leadership."
+      "Directed cross-functional student teams across attendee registration, security coordination, hall operations, and VIP protocol.",
+      "Coordinated auditorium stage layout, audio-visual feeds, and schedule adherence for all multi-purpose hall sessions.",
+      "Delivered zero-delay event execution with formal commendation from faculty and department leadership.",
     ],
-    skills: ["Event Operations", "Team Leadership", "Crisis Management", "Public Relations", "Protocol Management"]
+    skills: [
+      "Operations Management",
+      "Team Leadership",
+      "Crowd Coordination",
+      "Crisis Management",
+      "Protocol Administration",
+    ],
   },
   {
     id: "exp-3",
@@ -58,9 +76,9 @@ export const experiences: ExperienceItem[] = [
       "Responsible for accurate electronic record management, data processing, and document formatting.",
     achievements: [
       "Entered, updated, and audited computerized records ensuring data quality, precision, and confidentiality.",
-      "Managed client document workflows, digital file organization, and official online submissions."
+      "Managed client document workflows, digital file organization, and official online submissions.",
     ],
-    skills: ["Data Verification", "Record Management", "Fast Typing", "MS Office", "Quality Assurance"]
+    skills: ["Data Verification", "Record Management", "Quality Assurance"],
   },
   {
     id: "exp-4",
@@ -74,8 +92,8 @@ export const experiences: ExperienceItem[] = [
       "Operated digital computer systems, client technical workstations, and administrative office documentation software.",
     achievements: [
       "Handled official typing, document formatting, high-volume printing, and peripheral hardware operation.",
-      "Provided customer technical support, troubleshooting internet connections and system configurations."
+      "Provided customer technical support, troubleshooting internet connections and system configurations.",
     ],
-    skills: ["Computer Operations", "Document Formatting", "Hardware Peripherals", "Customer Support"]
-  }
+    skills: ["Computer Operations", "Document Formatting", "Hardware Peripherals"],
+  },
 ];

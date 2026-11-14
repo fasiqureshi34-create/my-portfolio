@@ -8,11 +8,11 @@ const fallbackProjects = [
     number: "01",
     title: "VICE DINE POS – Retro Vice City Edition",
     description:
-      "Offline-first restaurant Point-of-Sale system built with Flutter, 2D Flame engine (1980s synthwave UI), local SQLite storage, Bluetooth ESC/POS thermal receipt printing, Cloud Firestore sync, and Urdu/Roman Urdu AI voice assistant.",
+      "Offline-first restaurant Point-of-Sale system featuring a 1980s synthwave 2D Flame engine UI, local SQLite storage, Bluetooth ESC/POS thermal receipt printing, Cloud Firestore synchronization, and an Urdu/Roman Urdu AI voice assistant.",
     stack: [
       "Flutter",
       "Dart",
-      "Flame 2D",
+      "Flame Engine",
       "SQLite",
       "Cloud Firestore",
       "Bluetooth ESC/POS",
@@ -22,26 +22,62 @@ const fallbackProjects = [
   },
   {
     number: "02",
-    title: "EnergyMitr",
+    title: "APT Desktop – API Performance & Stress Tester",
     description:
-      "Smart energy consumption tracking and utility bill saving mobile & web platform built with React Native, Expo, Vite, Python FastAPI, and smart meter telemetry APIs.",
+      "Standalone cross-platform desktop load-testing suite converted from a VS Code extension into an Electron + React app. Supports HTTP/HTTPS stress testing up to 200 concurrent workers and 10,000 requests per run, live latency percentiles, real-time RPS charts, and schema-driven synthetic payload generation.",
     stack: [
-      "React Native",
-      "Expo",
+      "Electron",
+      "React",
+      "TypeScript",
       "Vite",
-      "Python FastAPI",
-      "IoT Telemetry",
-      "PostgreSQL",
+      "esbuild",
+      "Faker.js",
     ],
     github: "https://github.com/",
     demo: "https://example.com",
   },
   {
     number: "03",
+    title: "Bismillah Takeaway POS & Ordering Terminal",
+    description:
+      "Offline-first takeaway restaurant POS and online food ordering terminal with local Hive NoSQL caching, Cloud Firestore real-time order sync, Firebase Authentication, voice-assisted menu search, and Bluetooth thermal receipt printing.",
+    stack: [
+      "Flutter",
+      "Dart",
+      "Firebase Auth",
+      "Cloud Firestore",
+      "Hive",
+      "Bluetooth Thermal",
+    ],
+    github: "https://github.com/",
+    demo: "https://example.com",
+  },
+  {
+    number: "04",
+    title: "EnergyMitr",
+    description:
+      "Smart energy consumption tracking and utility bill saving mobile and web platform with real-time smart meter telemetry APIs and usage analytics.",
+    stack: [
+      "React Native",
+      "Expo",
+      "Vite",
+      "Python FastAPI",
+      "REST APIs",
+    ],
+    github: "https://github.com/",
+    demo: "https://example.com",
+  },
+  {
+    number: "05",
     title: "VoltSend",
     description:
-      "Web-based SaaS push notification and developer delivery platform built with PHP, MySQL, and an Android WebView client app.",
-    stack: ["PHP", "MySQL", "Android WebView", "REST APIs", "Tailwind CSS"],
+      "Web-based SaaS push notification and multi-app delivery platform paired with a native Android WebView client app and admin moderation panel.",
+    stack: [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "Android WebView",
+    ],
     github: "https://github.com/",
     demo: "https://example.com",
   },
@@ -74,7 +110,7 @@ export default async function Projects() {
         <SectionHeading
           eyebrow="03 — Selected Work"
           title="Flagship Projects."
-          description="Production systems, offline-first architectures, and mobile & developer platforms."
+          description="Production systems, offline-first architectures, mobile terminals, desktop tools, and developer platforms."
         />
 
         <div className="grid gap-6 lg:grid-cols-2">

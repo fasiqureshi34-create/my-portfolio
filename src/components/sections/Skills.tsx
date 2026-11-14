@@ -2,22 +2,32 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 const skillGroups = [
   {
-    category: "Mobile & Frontend",
-    description: "Cross-platform mobile apps & responsive, modern web interfaces.",
+    category: "Mobile & Desktop",
+    description: "Cross-platform mobile and desktop software engineering with native performance and offline reliability.",
     skills: [
       "Flutter",
       "Dart",
       "React Native",
       "Expo",
-      "Next.js 15",
+      "Electron",
+      "Android SDK",
+    ],
+  },
+  {
+    category: "Frontend Web",
+    description: "Modern, performant, and responsive web user interfaces and Single-Page/Fullstack applications.",
+    skills: [
+      "Next.js",
+      "React",
       "TypeScript",
+      "Vite",
       "Tailwind CSS",
-      "HTML5 / CSS3",
+      "HTML5/CSS3",
     ],
   },
   {
     category: "Backend & Databases",
-    description: "High-throughput APIs, offline databases & cloud document stores.",
+    description: "High-throughput APIs, microservices, relational and NoSQL databases, and real-time syncing pipelines.",
     skills: [
       "Python (FastAPI)",
       "PHP",
@@ -26,21 +36,18 @@ const skillGroups = [
       "MySQL",
       "SQLite",
       "Cloud Firestore",
-      "Prisma ORM",
+      "Hive",
+      "Prisma",
     ],
   },
   {
     category: "DevOps & Tools",
-    description: "Deployment pipelines, version control & hardware communication.",
+    description: "Modern development workflows, containerization, build tooling, and API protocol standards.",
     skills: [
       "Docker",
-      "Git / GitHub",
+      "Git",
+      "esbuild",
       "REST APIs",
-      "Linux Server",
-      "Windows Server",
-      "ESC/POS Thermal Printing",
-      "Postman",
-      "VS Code",
     ],
   },
 ];
@@ -52,27 +59,29 @@ export default function Skills() {
         <SectionHeading
           eyebrow="02 — Technical Skills"
           title="My technology stack."
-          description="Technologies, frameworks, and database architectures I use to design, build, and deploy production software."
+          description="Technologies, frameworks, and database architectures I use to design, build, and deploy production software across web, mobile, and desktop."
         />
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {skillGroups.map((group) => (
             <div
               key={group.category}
-              className="glass-card rounded-2xl p-7 transition duration-300 hover:-translate-y-1 hover:border-violet-400/30 border border-white/[0.06]"
+              className="glass-card rounded-2xl p-6 transition duration-300 hover:-translate-y-1 hover:border-violet-400/30 border border-white/[0.06] flex flex-col justify-between"
             >
-              <h3 className="text-lg font-semibold text-white">
-                {group.category}
-              </h3>
-              <p className="mt-2 min-h-12 text-xs sm:text-sm leading-6 text-zinc-400">
-                {group.description}
-              </p>
+              <div>
+                <h3 className="text-lg font-semibold text-white">
+                  {group.category}
+                </h3>
+                <p className="mt-2 min-h-12 text-xs leading-5 text-zinc-400">
+                  {group.description}
+                </p>
+              </div>
 
               <div className="mt-6 flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-lg border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-zinc-200 font-mono"
+                    className="rounded-lg border border-white/10 bg-white/[0.04] px-2.5 py-1 text-xs text-zinc-200 font-mono"
                   >
                     {skill}
                   </span>

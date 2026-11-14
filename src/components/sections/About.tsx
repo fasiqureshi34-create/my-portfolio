@@ -4,9 +4,9 @@ import SectionHeading from "@/components/ui/SectionHeading";
 const principles = [
   {
     icon: Smartphone,
-    title: "Mobile & Offline-First",
+    title: "Mobile & Desktop Systems",
     description:
-      "Architecting resilient mobile applications with Flutter and React Native that operate flawlessly even without active internet connectivity.",
+      "Architecting resilient cross-platform mobile apps with Flutter and standalone high-performance desktop suites with Electron.",
   },
   {
     icon: Server,
@@ -35,10 +35,10 @@ export default function About() {
         <div className="grid gap-10 md:grid-cols-[1.2fr_.8fr]">
           <div className="space-y-5 leading-8 text-zinc-300">
             <p>
-              I&apos;m <span className="text-white font-semibold">Fasi Ur Rehman (Fasi Qureshi)</span>, a Full-Stack Web &amp; Mobile Software Engineer based in Kotli, Azad Jammu &amp; Kashmir, Pakistan. I am pursuing my <span className="text-violet-300 font-medium">Bachelor of Science in Software Engineering (BSSE)</span> at the <span className="text-white">University of Kotli, AJK</span>.
+              I&apos;m <span className="text-white font-semibold">Fasi Ur Rehman (Fasi Qureshi)</span>, a Full-Stack Web, Mobile &amp; Desktop Software Engineer based in Kotli, Azad Jammu &amp; Kashmir, Pakistan. I am pursuing my <span className="text-violet-300 font-medium">Bachelor of Science in Software Engineering (BSSE)</span> at the <span className="text-white">University of Kotli, AJK</span>.
             </p>
             <p>
-              My passion lies at the intersection of modern mobile development, intelligent IoT data systems, and offline-first software architecture. Whether it&apos;s crafting a retro-themed restaurant Point of Sale in <span className="text-white font-medium">Flutter with SQLite &amp; Cloud Firestore sync</span>, building an energy optimization platform in <span className="text-white font-medium">React Native &amp; Python FastAPI</span>, or architecting developer SaaS platforms, I focus on performance, reliability, and user delight.
+              My passion lies at the intersection of modern cross-platform mobile &amp; desktop development, intelligent IoT data systems, and offline-first software architecture. Whether it&apos;s crafting a retro-themed restaurant Point of Sale in <span className="text-white font-medium">Flutter with SQLite &amp; Cloud Firestore sync</span>, building high-concurrency desktop load testers with <span className="text-white font-medium">Electron &amp; React</span>, or architecting energy optimization telemetry with <span className="text-white font-medium">React Native &amp; Python FastAPI</span>, I focus on performance, reliability, and user delight.
             </p>
             <p>
               Beyond code, I have demonstrated organizational leadership as the <span className="text-violet-300 font-medium">Head of Management</span> for a university conference serving 500–600 participants, combining technical rigor with effective team coordination.

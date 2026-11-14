@@ -2,10 +2,11 @@ import { Download, ExternalLink, FileText, CheckCircle2, Sparkles } from "lucide
 
 export default function Resume() {
   const highlights = [
-    "Flutter & React Native cross-platform mobile development",
-    "Offline-first systems with local SQLite & Cloud Firestore sync",
+    "Flutter, Electron & React Native cross-platform engineering",
+    "Offline-first POS systems with local SQLite & Cloud Firestore sync",
+    "Desktop API stress testing suites (200 workers, 10,000 reqs)",
     "High-performance Python FastAPI, Node.js & PostgreSQL APIs",
-    "Demonstrated university conference operations (500+ attendees)"
+    "Demonstrated campus conference operations (500+ attendees)"
   ];
 
   return (
